@@ -5,9 +5,9 @@ $(document).ready(function(){
 
 // Global variables
 
-var recordLimit;
-var startYear;
-var endYear;
+var recordLimit = 0;
+var startYear = 0;
+var endYear = 0;
 var listVals = [];
 var searchValue ;  
 
