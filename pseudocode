@@ -1,5 +1,3 @@
-# NYT_UTA_team_bonnieho
-
 Create a search box. Create an id for the search box. 
 js to store content of the search box.
 
@@ -26,3 +24,5 @@ Results will be shown below the search form.
 
 Create the divs to store the results.
 js - use either prepend or append to push the results to html.
+
+
