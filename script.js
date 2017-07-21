@@ -34,7 +34,17 @@ $("search").on("click", function(){
 		$.ajax({
 		  url: queryURL,
 		  method: 'GET',
-		}).done(function(result) {
+		}).done(function(res) {
+
+			var result = res.data;
+
+			for(var i=0; i<=recordLimit;i++)
+			{
+				var article = $("<div></div>");
+				 article.text(result[i]);
+
+
+			}
 
 
 		console.log(result);
