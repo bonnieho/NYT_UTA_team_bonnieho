@@ -1,65 +1,113 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
+
+  <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>NYT Search</title>
 	<!-- Link for the css file -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<!-- We need to bring in the bootstrap CSS -->
-   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
- 
-   	<link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+   <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
+
 <body>
-<!-- Cpntainer to contain the form -->
-<div class="container">
-<!-- First Row -->
- <div class="row">
- <!-- Column1 -->
- 	<div class="col-md-12">
- 	<!-- Jumbotron -->
- 		<div class="jumbotron">
- 			<div class="row">
- 				<div class="col-md-3">
- 		    	<i class="fa fa-newspaper-o" aria-hidden="true"></i> 
- 		    	</div> 
- 		    	<div class="col-md-9">
- 		 		<h1>New York Times Search</h1>
- 		 		</div>
- 		 	</div>
- 		</div><!--Closing for the Jumbotron Div-->
- 		
- 	</div><!--Closing column-->
- </div>
- <!-- <div class="row"> -->
+  <!--Body Container-->
+  <div class="container">
 
-<div id="search">
-	<h1>search term</h1>
-</div>
-<form>
 
-  <div class="form-group">
-    <label for="exampleInputEmail1">Search Term:</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  <!-- First Row: Jumbotron Container-->
+   <div class="row">
+    <div class="col-md-12">
+   	<!-- Jumbotron -->
+   		<div class="jumbotron">
+   		 	<h1 class="header-nyt">
+          <i class="fa fa-newspaper-o" aria-hidden="true"></i> 
+          New York Times Search
+        </h1>
+   		</div>
+    <!--Closing for the Jumbotron Div-->
+    </div>
+   </div>
+   <!-- <div class="row"> -->
+
+  <!--Second Row: Panel to contain form-->
+  <div class="row">
+    <div class="col-md-12">
+      <!--Search Parameter Form Container-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <i class="fa fa-list-alt" aria-hidden="true"></i>
+              Search Parameters
+            </h3>
+          </div>
+          <div class="panel-body">
+            <!--Start Form-->
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Search Term:</label>
+                <input type="default" class="form-control" id="searchTerm">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Number Of Records To Retrive:</label>
+                <input type="default" class="form-control" id="recordNumber">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Start Year (Optional):</label>
+                <input type="default" class="form-control" id="startYear">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">End Year(Optional):</label>
+                <input type="default" class="form-control" id="endYear">
+              </div>
+              <!--Buttons Row-->
+              <button type="submit" class="btn btn-default">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                Search
+              </button>
+              <button type="submit" class="btn btn-default">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+                Clear Results
+              </button>
+            </form>
+            <!--End Form-->
+          </div>
+        </div>
+      <!--Search Parameter Form Container End-->
+    </div>
   </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Number Of Records To Retrive:</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  <!--Send Row End-->
+
+  <!--Third Row: Search Results-->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <i class="fa fa-table" aria-hidden="true"></i>
+            Top Articles
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div id="searchResults"></div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">Example block-level help text here.</p>
+
+  
+
   </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Check me out
-    </label>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
-<!-- </div> -->
-</div>
+  <!--Body Container End-->
+
+  <!--JavaScript-->
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

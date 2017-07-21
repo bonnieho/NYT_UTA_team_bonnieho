@@ -1,13 +1,23 @@
-form{
-	border-style: solid;
-	border-width: 2px;
-	border-color: black;
-}
-#search{
-	background-color: yellow;
-	position: relative;
-	top: 10px;
-}
 .jumbotron{
-	background-color: blue !important;
+	background-color: #0f2770 !important;
+	margin-top: 25px;
+	margin-bottom: 55px !important;
+}
+
+.header-nyt{
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	color: #fff !important;
+}
+
+.panel-heading{
+	background-color: #0a2f56 !important;
+	color: #fff !important;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.btn{
+	padding: 10px !important;
 }
